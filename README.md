@@ -32,7 +32,7 @@ func main () {
 		// compilation error
 	}
 	// run the program
-	i := tcc.Run(0)
+	i := tcc.Run([]string{})
 }
 ```
 
