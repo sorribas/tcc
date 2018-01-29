@@ -34,7 +34,7 @@ const OUTPUT_PREPROCESS = 5
 // create a new TCC compilation context
 func NewTcc() *Tcc {
 	ctcc := C.tcc_new()
-	// C.tcc_set_error_func(ctcc, nil, C.golang_tcc_error_func_type(C.golang_tcc_error_func))
+	C.tcc_set_error_func(ctcc, nil, C.golang_tcc_error_func_type(C.golang_tcc_error_func))
 	r := &Tcc{ctcc}
 	return r
 }
