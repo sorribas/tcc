@@ -14,7 +14,7 @@ package main
 import "github.com/sorribas/tcc"
 
 func main () {
-  program := `
+	program := `
 	extern int printf(char* c,...);
 	int main () {
 		printf("Hello world!\n");
@@ -25,13 +25,13 @@ func main () {
 	defer tcc.Delete()
 	tcc.SetOutputType(OUTPUT_MEMORY)
 
-  // tcc must contain the libtcc1.a file that includes the TCC runtime.
+	// tcc must contain the libtcc1.a file that includes the TCC runtime.
 	tcc.SetLibPath("/path/to/tcc")
 	err := tcc.CompileString(program)
 	if err != nil {
-    // compilation error
+		// compilation error
 	}
-  // run the program
+	// run the program
 	i := tcc.Run(0)
 }
 ```
