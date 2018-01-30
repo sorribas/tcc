@@ -1,6 +1,6 @@
 package tcc
 
-// #cgo LDFLAGS: libtcc.a -ldl
+// #cgo LDFLAGS: -ltcc -ldl
 // #include "libtcc.h"
 //
 // typedef void (*golang_tcc_error_func_type) (void*, const char*);

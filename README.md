@@ -39,8 +39,8 @@ func main () {
 You can use this library as a backend for a compiler or simply
 to compile and run dynamically generated code.
 
-To build a project using this library, you need to have a `libtcc.a`
-for your platform in the cwd at build time.
+To build a project using this library, you need to have libtcc installed.
+You can download from the [official tcc website](https://bellard.org/tcc/)
 
 ## License
 
