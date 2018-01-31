@@ -16,14 +16,11 @@
 // download tcc from the website above. After that you
 // can extract and run
 //
-// ```
-// ./configure
-// make
-// make install
-// ```
+//  ./configure
+//  make
+//  make install
 //
 // If everything works, you will have libtcc installed.
 // Note that you need a C compiler like gcc for the above
 // to work.
-
 package tcc
