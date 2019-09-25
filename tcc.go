@@ -75,6 +75,11 @@ func (tcc *Tcc) OutputFile(path string) {
 	C.tcc_output_file(tcc.ctcc, C.CString(path))
 }
 
+// add include path
+func (tcc *Tcc) AddIncludePath(path string) {
+	C.tcc_add_include_path(tcc.ctcc, C.CString(path))
+}
+
 // link and run main() function and return its value.
 func (tcc *Tcc) Run(argv []string) (int, error) {
 	cstrings := []*C.char{}
